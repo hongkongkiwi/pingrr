@@ -37,7 +37,7 @@ def get_recent(page, get_type):
     elif get_type == "shows":
         content_type = "%5B%22show_season%22%5D"
 
-    r = requests.get("https://apis.justwatch.com/content/titles/en_{}/new?body=%7B%22"
+    r = requests.get("https://apis.justwatch.com/content/titles/it_{}/new?body=%7B%22"
                      "age_certifications%22:null,"
                      "%22content_types%22:{},"
                      "%22genres%22:null,"
