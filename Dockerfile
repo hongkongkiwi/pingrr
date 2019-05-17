@@ -20,7 +20,7 @@ RUN \
   # Python2 PIP
   python -m ensurepip && \
   # Get Pingrr
-  git clone --depth 1 --single-branch https://github.com/Dec64/pingrr.git /${APP_DIR} && \
+  git clone --depth 1 --single-branch https://github.com/jokerigno/pingrr.git /${APP_DIR} && \
   # Install PIP dependencies
   pip install --no-cache-dir --upgrade pip setuptools && \
   pip install --no-cache-dir --upgrade -r /${APP_DIR}/requirements.txt && \
