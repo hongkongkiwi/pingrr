@@ -6,6 +6,8 @@ ENV APP_DIR=pingrr
 RUN \
   # Upgrade all packages
   apk --no-cache -U upgrade && \
+  # Add bash to run config  
+  apk add --update bash && rm -rf /var/cache/apk/*  
   # Install OS dependencies
   apk --no-cache -U add python2 && \
   apk --no-cache -U add --virtual .build-deps \
